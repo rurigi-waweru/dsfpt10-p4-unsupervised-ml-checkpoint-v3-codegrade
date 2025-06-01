@@ -83,10 +83,8 @@ pca_data
 ```python
 # pca_transformer should be type PCA
 assert type(pca_transformer) == PCA
-# pca_data should be a NumPy array
-```
 
-```python
+# pca_data should be a NumPy array
 import numpy as np
 assert type(pca_data) == np.ndarray
 
