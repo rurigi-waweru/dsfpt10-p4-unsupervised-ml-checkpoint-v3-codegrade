@@ -51,11 +51,11 @@ data_scaled
 ```
 
 ## **Explanation:** # for further reading
-# `StandardScaler()` standardizes the features by removing the mean and scaling to unit variance — this is essential before applying PCA.
+* `StandardScaler()` standardizes the features by removing the mean and scaling to unit variance — this is essential before applying PCA.
 
-# `scaler.fit_transform(df)` fits the scaler on the data and transforms it in one step.
+* `scaler.fit_transform(df)` fits the scaler on the data and transforms it in one step.
 
-# Wrapping the result in pd.DataFrame(..., columns=df.columns) makes it easier to interpret or visualize later.
+* Wrapping the result in pd.DataFrame(..., columns=df.columns) makes it easier to interpret or visualize later.
 
 ```python
 # data_scaled should have the same shape as df
