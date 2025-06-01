@@ -88,11 +88,11 @@ pca_data
 ```
 
 ## **Explanation:** # for further reading
-# `n_components=0.95`` tells PCA to choose the number of components that explain at least 95% of the variance.
+* `n_components=0.95`` tells PCA to choose the number of components that explain at least 95% of the variance.
 
-# `random_state=42` ensures reproducibility (especially relevant when PCA has stochastic elements, e.g. with svd_solver='randomized').
+* `random_state=42` ensures reproducibility (especially relevant when PCA has stochastic elements, e.g. with svd_solver='randomized').
 
-# `fit_transform` fits the PCA model and applies the dimensionality reduction.
+* `fit_transform` fits the PCA model and applies the dimensionality reduction.
 
 ```python
 # pca_transformer should be type PCA
@@ -180,11 +180,11 @@ kmeans
 ```
 
 ## **Explanation:** # for further reading
-# The silhouette score peaks at k=2, meaning 2 clusters is best.
+* The silhouette score peaks at k=2, meaning 2 clusters is best.
 
-# `random_state = 42` ensures reproducibility.
+* `random_state = 42` ensures reproducibility.
 
-# You fit the model to the PCA-transformed data (`pca_data`).
+* You fit the model to the PCA-transformed data (`pca_data`).
 
 ```python
 # kmeans should be a fitted KMeans model with as many dimensions in cluster
@@ -218,15 +218,15 @@ ax.legend(*scatter.legend_elements(fmt="Cluster {x:.0f}"));
 ```
 
 ## **Explanation:**
-# `kmeans.labels_` gives the cluster assignments for each data point.
+* `kmeans.labels_` gives the cluster assignments for each data point.
 
-# `c=cluster_labels` colors points based on cluster membership.
+* `c=cluster_labels` colors points based on cluster membership.
 
-# `cmap='viridis'` is a nice color map, but you can pick others like 'tab10'.
+* `cmap='viridis'` is a nice color map, but you can pick others like 'tab10'.
 
-# `alpha=0.6` adds some transparency for better visualization.
+* `alpha=0.6` adds some transparency for better visualization.
 
-# The legend call shows which color corresponds to which cluster.
+* The legend call shows which color corresponds to which cluster.
 
 ```python
 # cluster_labels should be a NumPy array
